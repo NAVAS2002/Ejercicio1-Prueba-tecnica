@@ -2,6 +2,7 @@ const nombre = document.getElementById("nombre");
 const correo = document.getElementById("correo");
 const telefono = document.getElementById("telefono");
 const direccion = document.getElementById("direccion");
+const boton = document.getElementById("generarUsuario");
 
 async function cargarUsuario() {
     try {
@@ -18,5 +19,7 @@ async function cargarUsuario() {
     }
 }
 
+boton.addEventListener("click", cargarUsuario);
 cargarUsuario();
+
         
